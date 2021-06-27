@@ -965,7 +965,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &623597937
 Transform:
   m_ObjectHideFlags: 0
@@ -2125,6 +2125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1505249018}
   - component: {fileID: 1505249021}
+  - component: {fileID: 1505249019}
   m_Layer: 2
   m_Name: Gun
   m_TagString: Untagged
@@ -2148,6 +2149,23 @@ Transform:
   m_Father: {fileID: 1120024111}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1505249019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505249017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 023976bf3d471d04e99b447fee8b2bd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gunDamage: 1
+  fireRate: 0.25
+  weaponRange: 50
+  hitForce: 100
+  gunEnd: {fileID: 0}
 --- !u!82 &1505249021
 AudioSource:
   m_ObjectHideFlags: 0
