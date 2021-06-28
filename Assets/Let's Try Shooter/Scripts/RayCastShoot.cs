@@ -27,7 +27,7 @@ public class RayCastShoot : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("Fire1") && Time.time > nextFire) { 
+        if (Input.GetButtonDown("Fire1") && Time.time > nextFire) { 
             nextFire = Time.time + fireRate;
 
             StartCoroutine(ShotEffect());
@@ -51,6 +51,7 @@ public class RayCastShoot : MonoBehaviour
     private IEnumerator ShotEffect()
     {
         gunAudio.Play();
+
         laserLine.enabled = true;
         yield return shotDuration;
         laserLine.enabled = false;
